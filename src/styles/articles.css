@@ -1,0 +1,134 @@
+.articles {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+
+  gap: 3.5rem;
+  padding: 5% 7%;
+}
+
+.articles h2 {
+  color: var(--primary-color);
+  font-size: 3.2rem;
+  font-weight: 600;
+  font-family: "Source Sans Pro", sans-serif;
+  letter-spacing: 4%;
+}
+.article-container {
+  width: 100%;
+
+  gap: 2rem;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.article-card {
+  border: 0.1rem solid rgb(206, 205, 205);
+  border-radius: 1.5rem;
+  width: 23rem;
+  height: 31rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1.8rem;
+
+  padding: 2% 2%;
+}
+
+.article-img {
+  width: 100%;
+  height: 50%;
+}
+.article-img img {
+  width: 100%;
+  height: 100%;
+}
+
+.article-card-content {
+  display: flex;
+  flex-direction: column;
+  padding: 0 5%;
+  gap: 1rem;
+}
+
+.article-card-content h4 {
+  font-family: "Poppins", sans-serif;
+  font-size: 1.2rem;
+  color: var(--primary-color);
+}
+.article-card-content p {
+  font-family: "Open Sans", sans-serif;
+  font-size: 0.8rem;
+}
+
+.article-card-content button {
+  margin-top: 1rem;
+}
+
+.articles-nav {
+  align-self: center;
+}
+
+.articles-nav button {
+  width: 1.5rem;
+  height: 1.7rem;
+  font-size: 1.5rem;
+  background-color: var(--white-color);
+  border: 1px solid var(--grey-color);
+  border-radius: 0.3rem;
+  color: var(--grey-color);
+  margin: 0 1rem;
+  cursor: pointer;
+}
+
+.articles-nav button:disabled {
+  border: 1px solid rgb(216, 216, 216);
+  color: rgb(216, 216, 216);
+}
+
+.articles-nav span {
+  font-size: 1.2rem;
+}
+
+@media screen and (max-width: 500px) {
+  .articles {
+    align-items: center;
+  }
+  .article-container {
+    justify-content: center;
+    gap: 2rem;
+  }
+
+  .article-card {
+    height: 33rem;
+    justify-content: center;
+    gap: 3rem;
+    padding: 1rem 0;
+  }
+
+  .article-img {
+    width: 70%;
+    height: 40%;
+  }
+  .article-card-content {
+    align-items: center;
+    gap: 0.8rem;
+    padding: 0;
+    width: 80%;
+  }
+
+  .article-card-content h4 {
+    font-weight: 700;
+    word-spacing: 0.3rem;
+  }
+  .article-card-content p {
+    line-height: 2rem;
+    padding: 0 1rem;
+  }
+
+  .article-card-content button {
+    width: 10rem;
+    height: 2rem;
+  }
+}

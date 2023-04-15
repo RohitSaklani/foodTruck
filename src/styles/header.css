@@ -1,0 +1,44 @@
+.header {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  padding: 0 2rem 0 2rem;
+
+  position: absolute;
+
+  z-index: 1;
+}
+
+.logo-container {
+  margin-top: 2rem;
+  margin-left: 3.5rem;
+}
+
+.header button {
+  width: 7.625rem;
+  height: 2.625rem;
+  border-radius: 1.3215rem;
+
+  font-family: "Source Sans Pro", sans-serif;
+  font-size: 0.9rem;
+  font-weight: 300 !important;
+  color: #ffffff;
+
+  /* opacity: 0.5; */
+  background-color: #e23744;
+  border: 0.06rem solid #ffffff;
+  letter-spacing: 0.07rem;
+}
+
+@media screen and (max-width: 500px) {
+  .header {
+    justify-content: flex-end;
+    padding-top: 1rem;
+  }
+
+  .logo-container {
+    display: none;
+  }
+}
